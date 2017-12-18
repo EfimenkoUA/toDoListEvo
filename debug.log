@@ -1,0 +1,8 @@
+[1115/141414.934:ERROR:exception_handler_server.cc(524)] ConnectNamedPipe: Идет закрытие канала. (0xE8)
+[1119/150442.131:ERROR:persistent_memory_allocator.cc(738)] Corruption detected in shared-memory segment.
+[1124/113244.935:ERROR:persistent_memory_allocator.cc(738)] Corruption detected in shared-memory segment.
+[1126/145922.218:ERROR:persistent_memory_allocator.cc(738)] Corruption detected in shared-memory segment.
+[1126/145922.227:ERROR:exception_handler_server.cc(524)] ConnectNamedPipe: Идет закрытие канала. (0xE8)
+[1206/223510.212:ERROR:persistent_memory_allocator.cc(738)] Corruption detected in shared-memory segment.
+[1206/223510.228:ERROR:exception_handler_server.cc(524)] ConnectNamedPipe: Идет закрытие канала. (0xE8)
+[1208/145553.968:ERROR:persistent_memory_allocator.cc(738)] Corruption detected in shared-memory segment.

@@ -1,0 +1,577 @@
+body{
+	background-image: url(img/bg.png);
+	border-radius: 5px;
+}
+ul{
+	list-style-type: none;
+	padding: 0;
+}
+
+/*====================================HEADER===================================*/
+header{
+	background-image: url(img/bg-footer.png);
+	border-radius: 5px 5px 0 0;
+}
+.mainHeader{
+	margin: 0 auto;
+	text-align: center;
+}
+.headerName{
+	color: #ed411f;
+	padding: 5px 0;
+	margin-bottom: 0px;
+}
+
+
+/*==============================MAIN============================*/
+main{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	background-image: url(img/bg-footer.png);
+	padding: 10px;
+}
+
+#asideBar{
+	width: 25%;
+	margin-right: 10px;
+	position: relative;
+	
+}
+
+#toDoList{
+	width: 75%;
+	background-color: #eeeee9;
+	border-radius: 8px;
+	border: 2px solid #212020;
+	padding: 15px 5px;
+}
+
+#searchReminder {
+	width: 97%;
+	height: 25px;
+	border-radius: 15px;
+	border: 2px solid #212020;
+	font-size: 18px;
+	background-image: url(img/bg-footer.png);
+	outline: none;
+	padding-left: 5px;
+	color: #bc2c46;
+}
+
+
+#search{
+	position: relative;
+}
+
+#searchButton{
+	padding: 0px;
+	position: absolute;
+	right: 10px;
+	top: 8px;
+	border:none;
+	background: none;
+	outline: none;
+}
+
+#searchButton img{
+	width: 60%;
+}
+
+#searchButton img:hover{
+	cursor: pointer;
+}
+
+#remNameMain{
+	margin: 20px 0 0 0px;
+}
+#reminderName{
+	border:2px solid #212020;
+	border-radius:8px;
+	height: 360px;
+	margin-bottom: 10px;
+}
+#rn{
+	margin: 0 auto;
+}
+
+.reminderNameCol{
+	height: 35px;
+	border-top:1px solid #212020;
+}
+
+.reminderNameCol:first-child{
+	border-top: none;
+}
+.reminderNameCol div{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+}
+.reminderNameCol button{
+	width: 88%;
+	height: 100%;
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-size: 30px;
+	color: #bc2c46;
+	outline: none;
+	position: relative;
+}
+.buttonDel{
+	width: 12%!important;
+	font-size: 18px!important;
+	border: 2px solid #242424!important;
+	border-radius: 8px!important;
+	margin-top: 4px;
+	margin-right: 5px!important;
+}
+.buttonDel:hover{
+	background-color: #929290;
+	transition: .4s;
+}
+
+/*=============================Стили календаря=====================*/
+
+#calendarMain{
+	border: 2px solid #242424;
+	border-radius: 8px;
+	padding: 5px;
+	margin-bottom: 10px;
+	position: absolute;
+	background-image: url(img/bg-footer.png);
+	width: 95%;
+	display: none;
+}
+#calendar2 {
+  width: 100%;
+  font: monospace;
+  line-height: 1.2em;
+  font-size: 15px;
+  text-align: center;
+  color: #929290;
+}
+#calendar2 thead tr td{
+	color: #929290;
+}
+#calendar2 thead tr:last-child {
+  font-size: small;
+  color: rgb(85, 85, 85);
+}
+#calendar2 thead tr:nth-child(1) td:nth-child(2) {
+  color: rgb();
+}
+#calendar2 thead tr:nth-child(1) td:nth-child(1):hover, #calendar2 thead tr:nth-child(1) td:nth-child(3):hover {
+  cursor: pointer;
+}
+#calendar2 tbody td {
+  color: #929290;
+  border: 2px solid #242424;
+}
+#calendar2 tbody td:hover{
+	cursor: pointer;
+	background-image: url(img/bg.png);
+	color: #ed411f;
+}
+#calendar2 tbody td:nth-child(n+6), #calendar2 .holiday {
+  color: #929290;
+}
+#calendar2 tbody td.today {
+  background: #ed411f;
+  color: #fff;
+}
+
+#asideBarButton{
+	margin-top: 10px;
+}
+#asideBarButton img{
+	width: 20px;
+	background-color: #888888;
+}
+#calendarButton{
+	border-radius: 8px;
+	border:2px solid #242424;
+	background-image: url(img/bg-footer.png);
+	cursor: pointer;
+	position: relative;
+	font-size: 25px;
+	font-weight: bold;
+	width:40px;
+}
+
+#nameListDob{
+	font-size: 25px;
+	font-weight: bold;
+	width:40px;
+	color: #888888;
+	border-radius: 8px;
+	border:2px solid #242424;
+	background-image: url(img/bg-footer.png);
+	cursor: pointer;
+	position: relative;
+}
+
+#nameSpisok{
+	position: absolute;
+	z-index: 3;
+	padding: 7px 5px;
+	border-radius: 5px;
+	background-image: url(img/bg.png);
+	bottom: 24px;
+	left: 100px;
+	width: 62%;
+	display: none;
+}
+#nameSpisok input{
+	border-radius: 5px;
+	color: #888888;
+	border: none;
+	background:#242424;
+	background-image: url(img/bg.png);
+	width: 100%;
+	outline: none;
+	font-size: 16px;
+}
+#nameList{
+	position: absolute;
+	left: 85%;
+	bottom: 6%;
+	font-size: 22px;
+	background: none;
+	border: none;
+	color: #888888;
+	outline: none;
+	cursor: pointer;
+}
+#nameSpisok:before{
+	content: "";
+    width: 0;
+    height: 0;
+    border-right: 7px solid #f1f1ec;
+    border-bottom: 7px solid transparent;
+    border-top: 7px solid transparent;
+    margin-left: -12px;
+    position: absolute;
+    margin-top: 3px;
+    z-index: 3;
+}
+/*===============================toDoList==========================*/
+#toDoList{
+	height: 450px;
+}
+.toDoListHeader{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	position: relative;
+}
+
+.toDoListHeaderName{
+	width: 90%;
+	font-size: 26px;
+	color: #bc2c46;
+	margin-left: 15px;
+	margin-top: 5px;
+}
+
+.toDoListHeaderButton{
+	width: 10%;
+}
+
+#tdlhb{
+	float: right;
+	font-size: 26px;
+	padding: 0 10px;
+	color: #babab5;
+	background: none;
+	border: 2px solid #babab5;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-right: 10px;
+	outline: none;
+}
+#tdlhb:hover{
+	border-color: #bc2c46;
+	color: #bc2c46;
+}
+/*=============================Поле вводда напоминания===================*/
+#newReminder{
+	position: absolute;
+	width: 300px;
+	height: 200px;
+	background:#efefe9;
+	z-index: 5;
+	right: 60px;
+	border-radius: 8px;
+	border:1px solid #babab5;
+	padding: 10px;
+	margin: 0 auto;
+	text-align: center;
+	display: none;
+}
+#newReminder:before{
+	content: "";
+    width: 0;
+    height: 0;
+    border-left: 7px solid #babab5;
+    border-bottom: 7px solid transparent;
+    border-top: 7px solid transparent;
+    margin-left: -12px;
+    position: absolute;
+    margin-top: 2px;
+    z-index: 3;
+    right: -8px;
+}
+#nri{
+	width: 90%;
+	padding: 5px 5px;
+	border-radius: 3px;
+	border:none;
+	outline: none;
+}
+#remindMe{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	background: white;
+	width: 93%;
+	margin:0 auto;
+	margin-top: 10px;
+	border-radius: 3px;
+	color: #2f2f2f;
+}
+.remindMeHeader{
+	width: 40%;
+	text-align: right;
+	margin-right: 5px;
+}
+.remindMeHeader h4{
+	margin:5px 5px;
+}
+.remindMeCheck{
+	width: 50%;
+	margin-top: 6px;
+	text-align: left;
+}
+.remindMeCheck p{
+	margin: 0px 0px 0px 0px;
+}
+.remindMeCheck p input{
+	margin: 0px;
+}
+#reminMeDate{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	background: white;
+	width: 90%;
+	margin:0 auto;
+	border-radius: 5px 5px 0 0;
+	margin-top: 10px;
+	padding: 5px
+}
+#reminMeDateHeader{
+	width: 30%;
+	text-align: right;
+	font-weight: bold;
+	
+}
+#reminMeDateVvod{
+	width: 70%;
+}
+#reminMeDateVvod input{
+	border:none;
+	outline: none;
+}
+#remindMeTime{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	background: white;
+	width: 93.5%;
+	margin:0 auto;
+	border-radius: 0 0 5px 5px;
+}
+#remindMeTimeHeader{
+	width: 30%;
+	text-align: right;
+	font-weight: bold;
+}
+#remindMeTimeVvod{
+	text-align: left;
+	width: 70%;
+}
+#remindMeTimeVvod input{
+	margin-left: 10%;
+	border:none;
+}
+#remindMeButton{
+	margin-top: 15px;
+	text-align: right;
+	margin-right: 10px;
+}
+#remindMeButtonAdd,
+#remindMeButtonShift{
+	float: right;
+	font-size: 26px;
+	color: white;
+	border:none;
+	border-radius: 5px;
+	padding: 3px 8px;
+	background: #bc2c46;
+	cursor: pointer;
+	outline: none;
+}
+#remindMeButtonShift{
+	display: none;
+}
+#remindMeButtonShift:hover{
+	background-color: #f03355;
+}
+#remindMeButtonAdd:hover{
+	background-color: #f03355;
+}
+
+
+.toDoListContent{
+	border: 1px solid #babab5;
+	margin: 15px 10px;
+}
+
+#toDoListSpisok{
+	margin: 0 auto;
+	height: 372px;
+	position: relative;
+	
+}
+
+.tdlSpisok{
+	height: 30px;
+	border-top: 1px solid #babab5;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+}
+
+.tdlSpisok:first-child{
+	border-top: none;
+}
+
+.redLine{
+	width: 5%;
+	border-right: 3px solid #f2acac;
+	height: 30px;
+	position: absolute;
+	z-index: 1;
+}
+.mainDelo{
+	width: 95%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+}
+.strButton{
+	width: 9%;
+}
+.sb{
+	margin-top: 10%;
+	margin-left: 30%;
+	color: #bc2c46;
+	background: none;
+	position: relative;
+	z-index: 5;
+	border:none;
+	outline: none;
+}
+.sb:hover{
+	cursor:pointer;
+}
+.strSob{
+	width: 70%;
+}
+.strDate{
+	width: 15%;
+}
+.strTime{
+	width: 10%;
+}
+.shiftSob{
+	width: 5%;
+}
+.shiftSobBut{
+	background: none;
+	border-radius: 35px;
+	padding: 3px 10px;
+	border:none;
+	border:1.5px solid #babab5;
+	color: #babab5;
+	font-weight: bold;
+	outline: none;
+}
+.shiftSobBut:hover{
+	cursor: pointer;
+	border-color: #bc2c46; 
+	color: #bc2c46;
+	transition: .4s;
+}
+
+.inputDelo{
+	width: 95%;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>toDoListEvo</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!-- Заголовок-->
+	<header>
+		<div class="mainHeader">
+			<h3 class="headerName">Reminders</h3>
+		</div>
+	</header>
+
+	<!-- Контент-->
+	<main>
+		<section id="asideBar">
+			<div id="search">
+				<input type="text" id="searchReminder">
+				<button id="searchButton"><img src="img/search.png" alt=""></button>
+			</div>
+			<div id="remNameMain">
+			<div id="reminderName">
+				<ul id="rn">
+					<li class="reminderNameCol"></li>
+					<li class="reminderNameCol"></li>
+					<li class="reminderNameCol"></li>
+					<li class="reminderNameCol"></li>
+					<li class="reminderNameCol"></li>
+					<li class="reminderNameCol"></li>
+					<li class="reminderNameCol"></li>
+					<li class="reminderNameCol"></li>
+					<li class="reminderNameCol"></li>
+					<li class="reminderNameCol"></li>
+				</ul>
+			</div>
+			</div>
+			<div id="calendarMain">
+				<table id="calendar2">
+  					<thead>
+    					<tr><td><img src="img/prev.png" alt=""><td colspan="5"><td><img src="img/dauble_last.png" alt="">
+    					<tr><td>Mon<td>Tue<td>Wed<td>Thu<td>Fra<td>Sat<td>Sun
+  					<tbody>
+				</table>
+			</div>
+			<div id="asideBarButton">
+				<button id="calendarButton"><img src="img/calendar.png" alt=""></button>
+				<button id="nameListDob">+</button>
+				<div id="nameSpisok">
+					<input id="nameListValue" type="text" placeholder="Name list">
+					<button id="nameList">+</button>
+				</div>
+			</div>
+		</section>
+		<section id="toDoList">
+			<div class="toDoListHeader">
+				<div class="toDoListHeaderName"></div>
+				<div class="toDoListHeaderButton">
+					<button id="tdlhb">+</button>
+				</div>
+				<div id="newReminder">
+					<div id="newReminderInput">
+						<input id="nri" type="text" placeholder="Name reminder">
+					</div>
+					<div id="remindMe">
+						<div class="remindMeHeader">
+							<h4>remind me:</h4>
+						</div>
+						<div class="remindMeCheck">
+							<p><input type="checkbox">on day</p>
+							<p><input type="checkbox">add a Location</p>
+						</div>
+					</div>
+					<div id="remindMeSrok">
+						<div id="reminMeDate">
+							<div id="reminMeDateHeader">date:</div>
+							<div id="reminMeDateVvod">
+								<input id="dateS" type="date">
+							</div>
+						</div>
+						<div id="remindMeTime">
+							<div id="remindMeTimeHeader">time:</div>
+							<div id="remindMeTimeVvod">
+								<input id="timeS" type="time">
+							</div>
+						</div>
+					</div>
+					<div id="remindMeButton">
+						<button id="remindMeButtonAdd">add</button>
+						<button id="remindMeButtonShift">shift</button>
+					</div>
+				</div>
+			</div>
+			<div class="toDoListContent">
+				<ul id="toDoListSpisok">
+					<li class="tdlSpisok"><div class="redLine"></div></li>
+					<li class="tdlSpisok"><div class="redLine"></div></li>
+					<li class="tdlSpisok"><div class="redLine"></div></li>
+					<li class="tdlSpisok"><div class="redLine"></div></li>
+					<li class="tdlSpisok"><div class="redLine"></div></li>
+					<li class="tdlSpisok"><div class="redLine"></div></li>
+					<li class="tdlSpisok"><div class="redLine"></div></li>
+					<li class="tdlSpisok"><div class="redLine"></div></li>
+					<li class="tdlSpisok"><div class="redLine"></div></li>
+					<li class="tdlSpisok"><div class="redLine"></div></li>
+					<li class="tdlSpisok"><div class="redLine"></div></li>
+					<li class="tdlSpisok"><div class="redLine"></div></li>
+				</ul>
+			</div>
+		</section>
+	</main>
+
+	<script src="calendar.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
