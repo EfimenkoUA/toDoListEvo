@@ -13,6 +13,7 @@ let cb1 = function () {
  			asideBarButton.style.transition = '.5s';
  			reminderName.style.transition = '.5s';
  			reminderName.style.overflowY = 'hidden';
+ 			console.log('ok')
  		}, 100)
  		
 
